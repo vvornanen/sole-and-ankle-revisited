@@ -62,6 +62,7 @@ const MainHeader = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     border-top: 4px solid ${COLORS.gray[900]};
+    align-items: center;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
@@ -84,7 +85,7 @@ const MobileNav = styled.nav`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 32px;
   }
 
