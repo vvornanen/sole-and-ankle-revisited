@@ -7,6 +7,7 @@ import SuperHeader from "../SuperHeader";
 import MobileMenu from "../MobileMenu";
 import Icon from "../Icon";
 import UnstyledButton from "../UnstyledButton/UnstyledButton";
+import { NavLink } from "../NavLink/NavLink";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
@@ -96,18 +97,6 @@ const MobileNav = styled.nav`
 
 const Side = styled.div`
   flex: 1;
-`;
-
-const NavLink = styled.a`
-  font-size: 1.125rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: ${COLORS.gray[900]};
-  font-weight: ${WEIGHTS.medium};
-
-  &:first-of-type {
-    color: ${COLORS.secondary};
-  }
 `;
 
 export default Header;
