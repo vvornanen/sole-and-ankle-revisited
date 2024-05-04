@@ -39,16 +39,14 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
 };
 
 const StyledDialogOverlay = styled(DialogOverlay)`
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: color-mix(in hsl, var(--color-gray-700) 80%, transparent);
+  display: flex;
+  justify-content: flex-end;
 `;
 
 const StyledDialogContent = styled(DialogContent)`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
   width: 300px;
   background-color: var(--color-white);
   padding: 24px 16px 32px 32px;
