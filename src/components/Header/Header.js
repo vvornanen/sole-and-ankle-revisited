@@ -63,6 +63,10 @@ const MainHeader = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     border-top: 4px solid ${COLORS.gray[900]};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
+    padding-inline: 16px;
+  }
 `;
 
 const Nav = styled.nav`
