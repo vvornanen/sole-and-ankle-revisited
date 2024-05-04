@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { COLORS, WEIGHTS } from "../../constants";
+import { COLORS } from "../../constants";
 import Logo from "../Logo";
 import SuperHeader from "../SuperHeader";
 import MobileMenu from "../MobileMenu";
@@ -73,8 +73,9 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(8 / 16 * 1rem, 7vw - 3rem, 48 / 16 * 1rem);
   margin: 0 48px;
+  overflow-x: auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     display: none;
