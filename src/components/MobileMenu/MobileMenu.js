@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import styled from "styled-components/macro";
-import { DialogOverlay, DialogContent, Dialog } from "@reach/dialog";
+import { DialogOverlay, DialogContent } from "@reach/dialog";
 
 import UnstyledButton from "../UnstyledButton";
 import Icon from "../Icon";
 import VisuallyHidden from "../VisuallyHidden";
-import { COLORS, WEIGHTS } from "../../constants";
+import { WEIGHTS } from "../../constants";
 import { NavLink } from "../NavLink/NavLink";
 
 const MobileMenu = ({ isOpen, onDismiss }) => {
@@ -42,7 +42,7 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
 const StyledDialogOverlay = styled(DialogOverlay)`
   position: absolute;
   inset: 0;
-  background-color: hsl(220deg 5% 40% / 80%);
+  background-color: color-mix(in hsl, var(--color-gray-700) 80%, transparent);
 `;
 
 const StyledDialogContent = styled(DialogContent)`
@@ -51,7 +51,7 @@ const StyledDialogContent = styled(DialogContent)`
   right: 0;
   bottom: 0;
   width: 300px;
-  background-color: ${COLORS.white};
+  background-color: var(--color-white);
   padding: 24px 16px 32px 32px;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@ const FooterLink = styled.a`
   font-size: ${14 / 16}rem;
   font-weight: ${WEIGHTS.normal};
   text-decoration: none;
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
 `;
 
 export default MobileMenu;

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { COLORS } from "../../constants";
 import Logo from "../Logo";
 import SuperHeader from "../SuperHeader";
 import MobileMenu from "../MobileMenu";
@@ -59,10 +58,10 @@ const MainHeader = styled.div`
   align-items: baseline;
   padding: 18px 32px;
   height: 72px;
-  border-bottom: 1px solid ${COLORS.gray[300]};
+  border-bottom: 1px solid var(--color-gray-300);
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    border-top: 4px solid ${COLORS.gray[900]};
+    border-top: 4px solid var(--color-gray-900);
     align-items: center;
   }
 
