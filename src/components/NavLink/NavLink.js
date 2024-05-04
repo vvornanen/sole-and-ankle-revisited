@@ -1,12 +1,11 @@
 import styled from "styled-components/macro";
-import { WEIGHTS } from "../../constants";
 
 export const NavLink = styled.a`
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-gray-900);
-  font-weight: ${WEIGHTS.medium};
+  font-weight: var(--weight-medium);
 
   &:first-of-type {
     color: var(--color-secondary);

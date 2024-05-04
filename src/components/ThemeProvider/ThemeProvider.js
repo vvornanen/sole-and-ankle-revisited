@@ -23,5 +23,9 @@ const ThemeVars = createGlobalStyle`
     --color-gray-900: ${({ theme }) => theme.colors.gray[900]};
     --color-primary: ${({ theme }) => theme.colors.primary};
     --color-secondary: ${({ theme }) => theme.colors.secondary};
+    
+    --weight-normal: ${({ theme }) => theme.weights.normal};
+    --weight-medium: ${({ theme }) => theme.weights.medium};
+    --weight-bold: ${({ theme }) => theme.weights.bold};
   }
 `;

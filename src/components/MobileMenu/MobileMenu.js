@@ -6,7 +6,6 @@ import { DialogOverlay, DialogContent } from "@reach/dialog";
 import UnstyledButton from "../UnstyledButton";
 import Icon from "../Icon";
 import VisuallyHidden from "../VisuallyHidden";
-import { WEIGHTS } from "../../constants";
 import { NavLink } from "../NavLink/NavLink";
 
 const MobileMenu = ({ isOpen, onDismiss }) => {
@@ -76,7 +75,7 @@ const Footer = styled.footer`
 
 const FooterLink = styled.a`
   font-size: ${14 / 16}rem;
-  font-weight: ${WEIGHTS.normal};
+  font-weight: var(--weight-medium);
   text-decoration: none;
   color: var(--color-gray-700);
 `;

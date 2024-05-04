@@ -16,4 +16,9 @@ export const theme = {
     tablet: `${950 / 16}rem`,
     laptop: `${1300 / 16}rem`,
   },
+  weights: {
+    normal: 500,
+    medium: 600,
+    bold: 800,
+  },
 };
